@@ -1,0 +1,48 @@
+# Core Libraries
+numpy
+pandas
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine Learning and Preprocessing
+scikit-learn
+xgboost
+lightgbm
+catboost
+
+
+
+# Model Evaluation and Metrics
+yellowbrick
+shap
+
+# Data Handling and Version Control
+# dvc==3.25.1
+
+# Experiment Tracking and Deployment
+mlflow
+joblib
+
+# Data Reporting and Profiling
+ydata-profiling # Formerly pandas-profiling
+
+# Web Framework for Deployment
+flask
+gunicorn # For production deployment
+
+# Workflow Orchestrat
+apache-airflow
+# Jupyter and Notebook Utilities
+
+jupyter
+ipykernel
+
+# Miscellaneous Tools
+requests
+json5
+
+# visualizing missing values
+missingno
