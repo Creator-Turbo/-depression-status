@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Health and Work Data Information</h1>
+        <p>Please provide the information below:</p>
+
+        <form method="POST" action="/predict">
+            <label for="gender">Gender:</label>
+            <select name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="age">Age (in years):</label>
+            <input type="number" name="age" min="18" required>
+
+            <label for="work_pressure">Work Pressure (1 to 5):</label>
+            <input type="number" name="work_pressure" min="1" max="5" required>
+
+            <label for="job_satisfaction">Job Satisfaction (1 to 5):</label>
+            <input type="number" name="job_satisfaction" min="1" max="5" required>
+
+            <label for="sleep_duration">Sleep Duration:</label>
+            <select name="sleep_duration" required>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-6 hours">5-6 hours</option>
+                <option value="7-8 hours">7-8 hours</option>
+                <option value="More than 8 hours">More than 8 hours</option>
+            </select>
+
+            <label for="dietary_habits">Dietary Habits:</label>
+            <select name="dietary_habits" required>
+                <option value="Healthy">Healthy</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Unhealthy">Unhealthy</option>
+            </select>
+
+            <label for="suicidal_thoughts">Have you ever had suicidal thoughts?</label>
+            <select name="suicidal_thoughts" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="work_hours">Work Hours (per day):</label>
+            <input type="number" name="work_hours" min="1" required>
+
+            <label for="financial_stress">Financial Stress (1 to 5):</label>
+            <input type="number" name="financial_stress" min="1" max="5" required>
+
+            <label for="family_history">Family History of Mental Illness:</label>
+            <select name="family_history" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <button type="submit">Predict Depression Risk</button>
+        </form>
+
+        {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>

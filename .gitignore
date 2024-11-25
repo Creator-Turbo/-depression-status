@@ -164,4 +164,4 @@ cython_debug/
 
 
 ## ignore the report html 
-report.html/
+Notebook/report.html/
