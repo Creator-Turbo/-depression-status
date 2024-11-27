@@ -30,16 +30,16 @@ def predict():
 
 
         # Get input data from the form
-        gender = [request.form['Gender']]
-        age = [int(request.form['Age'])]
-        work_pressure = [int(request.form['Work Pressure'])]
-        job_satisfaction = [int(request.form['Job Satisfaction'])]
-        sleep_duration = [request.form['Sleep Duration']]
-        dietary_habits = [request.form['Dietary Habits']]
-        suicidal_thoughts = [request.form['Have you ever had suicidal thoughts ?']]
-        work_hours = [int(request.form['Work Hours'])]
-        financial_stress = [int(request.form['Financial Stress'])]
-        family_history = [request.form['Family History of Mental Illness']]
+        gender = request.form['Gender']
+        age = int(request.form['Age'])
+        work_pressure = int(request.form['Work Pressure'])
+        job_satisfaction = int(request.form['Job Satisfaction'])
+        sleep_duration = request.form['Sleep Duration']
+        dietary_habits = request.form['Dietary Habits']
+        suicidal_thoughts = request.form['Have you ever had suicidal thoughts ?']
+        work_hours = int(request.form['Work Hours'])
+        financial_stress = int(request.form['Financial Stress'])
+        family_history = request.form['Family History of Mental Illness']
 
         # Preprocess the input data into a format suitable for the model
         input_data = [
@@ -55,6 +55,10 @@ def predict():
             1 if family_history == 'Yes' else 0  # Family history encoding
         ]
         
+
+        # Convert to a 2D numpy array
+        input_data_2d = np.array(input_data, dtype=float).reshape(1, -1)  # Ensure numeric data
+        # print(input_data)
         # Convert to a pandas DataFrame, ensuring the same column order as the training data
         columns = [
             'Gender', 'Age', 'Work Pressure', 'Job Satisfaction', 'Sleep Duration', 
@@ -62,17 +66,30 @@ def predict():
         ]
         
         # Convert input_data into a pandas DataFrame with column names
-        input_df = pd.DataFrame([input_data], columns=columns)
+        input_df = pd.DataFrame(input_data_2d, columns=columns)
+        # input_df=input_df.
+        # Handle NaN values if any
+        input_df = input_df.fillna(0)  
+        print(input_df.head())
+        print(input_df.isnull().sum())
+
         
-        input_df = input_df.apply(pd.to_numeric, errors='coerce')
-        input_df = input_df.fillna(0, inplace=True)  # Replace NaNs with 0
-        # print(input_df.shape)
-       
-       
-        print(input_df)
-        print(model)
-        # Make prediction
-        prediction = model.predict(input_df)
+        # input_df = input_df.apply(pd.to_numeric, errors='coerce')
+        # input_df = input_df.fillna(0, inplace=True)  # Replace NaNs with 0
+        # # print(input_df.shape)
+         # Convert to a 2D numpy array
+       # Ensure no missing values exist
+        if input_df.isnull().values.any():
+            raise ValueError("Input data contains NaN values after preprocessing.")
+        
+        else :
+            print("not null values")
+
+        
+        print("hello")
+
+         #    Make prediction
+        prediction = model.predict(input_df)[0]
     
         print(prediction)
 
