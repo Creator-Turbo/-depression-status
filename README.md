@@ -30,6 +30,8 @@
 ## Overview
 This repository contains code for training multiple machine learning classifiers on a given dataset to predict mental health outcomes based on demographic, lifestyle, and work-related factors. The models are implemented using the scikit-learn library and include a wide range of supervised learning algorithms suitable for classification tasks.
 
+# Model accuracy of 97%
+
 The following classifiers are applied to the dataset:
 
 -Logistic Regression <br>
@@ -139,11 +141,11 @@ Deploy and your app will be live!
 
 ## To Do
 
-Implement cross-validation for model evaluation.
-Enhance hyperparameter tuning for better performance.
-Add user authentication for personalized predictions in the Flask app.
-Expand the dataset with additional mental health indicators.
-Improve web interface design for better user experience. 
+Implement cross-validation for model evaluation.<br>
+Enhance hyperparameter tuning for better performance.<br>
+Add user authentication for personalized predictions in the Flask app.<br>
+Expand the dataset with additional mental health indicators.<br>
+Improve web interface design for better user experience. <br>
 
 
 ## Bug / Feature Request
