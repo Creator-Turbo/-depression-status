@@ -2,7 +2,7 @@
 # Depression Professional Classification : 
 
 ## Table of Content
-  * [Demo](#demo)
+  <!-- * [Demo](#demo) -->
   * [Overview](#overview)
   * [Motivation](#motivation)
   * [Technical Aspect](#technical-aspect)
