@@ -20,13 +20,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        # Define the required fields
-        required_fields = [
-             'Gender', 'Age', 'Work Pressure', 'Job Satisfaction', 'Sleep Duration', 
-            'Dietary Habits', 'Have you ever had suicidal thoughts ?', 'Work Hours', 'Financial Stress', 'Family History of Mental Illness'
-        ]
-
-
+    
         # Get input data from the form
         gender = request.form['Gender']
         age = int(request.form['Age'])
