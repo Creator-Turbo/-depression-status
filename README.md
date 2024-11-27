@@ -64,6 +64,8 @@ Training Machine Learning Models:
 We train multiple machine learning algorithms on the mental health dataset.
 All models are implemented using scikit-learn, a Python library for machine learning.
 Evaluation is performed using performance metrics such as accuracy, precision, recall, and F1-score.
+<br>
+
 Building and Hosting a Flask Web App on Render:
 
 A Flask web application is built to interact with the trained models and make real-time predictions based on user input.
