@@ -21,7 +21,7 @@
 ## Demo
 Link: [https://ipcc.rohitswami.com](https://ipcc.rohitswami.com)
 
-[![](https://i.imgur.com/5gj4USj.png)](https://ipcc.rohitswami.com)
+[![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com)
 
 ## Overview
 This repository contains code for training multiple machine learning classifiers on a given dataset to predict mental health outcomes based on demographic, lifestyle, and work-related factors. The models are implemented using the scikit-learn library and include a wide range of supervised learning algorithms suitable for classification tasks.
@@ -73,29 +73,50 @@ Users can submit their data via a simple web interface and receive mental health
 
 ## Installation
 The Code is written in Python 3.10. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
+
+# the clone the repository
+
+```bash
+
+git clone gh repo clone Creator-Turbo/-depression-status
+
+```
+# Install dependencies: (all lib)
 ```bash
 pip install -r requirements.txt
 ```
 
 
 
+## Run
+To train the machine learning models:
+
+1. Prepare your dataset (make sure it’s in the correct format).
+>> Data : https://www.kaggle.com/datasets/ikynahidwin/depression-professional-dataset
+
+
+# To run the Flask web app locally
+```bash
+python app.py
+
 ```
+## Deployment on Render
+To deploy the Flask web app on Render:
 
+Push your code to GitHub.
+Go to Render and create a new web service.
+Connect your GitHub repository to Render.
+Set up the environment variables if required (e.g., API keys, database credentials).
+Deploy and your app will be live!
 
-## Deployement on render
-Set the environment variable on Heroku as mentioned in _STEP 1_ in the __Run__ section. [[Reference](https://devcenter.heroku.com/articles/config-vars)]
-
-![](https://i.imgur.com/TmSNhYG.png)
-
-Our next step would be to follow the instruction given on [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python) to deploy a web app.
 
 ## Directory Tree 
-```Professional\
+```
+    Professional\
     ├── data/                     # Dataset files
     ├── notebook/                 # Jupyter notebooks
     ├── static/                   # Static files (images, CSS, JS)
-    ├── templates/                # HTML files for Flask
-    ├── venv1/                    # Virtual environment
+    ├── templates/                # HTML files for Flask         
     ├── .gitignore                # Git ignore file
     ├── app.py                    # Main Flask application
     ├── best_model.pkl            # Trained machine learning model
@@ -105,43 +126,53 @@ Our next step would be to follow the instruction given on [Heroku Documentation]
 ```
 
 ## To Do
-1. Convert the app to run without any internet connection, i.e. __PWA__.
-2. Add a better vizualization chart to display the classification.
+
+Implement cross-validation for model evaluation.
+Enhance hyperparameter tuning for better performance.
+Add user authentication for personalized predictions in the Flask app.
+Expand the dataset with additional mental health indicators.
+Improve web interface design for better user experience. 
+
 
 ## Bug / Feature Request
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/rowhitswami/Indian-Paper-Currency-Classification/issues/new) by including your search query and the expected result.
+If you encounter any bugs or want to request a new feature, please open an issue on GitHub. We welcome contributions!
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/rowhitswami/Indian-Paper-Currency-Classification/issues/new). Please include sample queries and their corresponding results.
+
+
 
 ## Technologies Used
+Python 3.10  
+scikit-learn  
+Flask (for web app development)  
+Render (for hosting and deployment)  
+pandas (for data manipulation)  
+numpy (for numerical operations)  
+matplotlib (for visualizations)  
+
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
 
-[<img target="_blank" src="https://keras.io/img/logo.png" width=200>](https://keras.io/) [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) [<img target="_blank" src="https://www.kindpng.com/picc/b/301/3012484.png" width=200>](https://aws.amazon.com/s3/) 
 
-[<img target="_blank" src="https://sentry-brand.storage.googleapis.com/sentry-logo-black.png" width=270>](https://www.sentry.io/) [<img target="_blank" src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png" width=100>](https://jquery.com/)
+[<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/260px-Scikit_learn_logo_small.svg.png" width=170>](https://pandas.pydata.org/docs/)
+[<img target="_blank" src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*RWkQ0Fziw792xa0S" width=170>](https://pandas.pydata.org/docs/)
+  [<img target="_blank" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDzf1RMK1iHKjAswDiqbFB8f3by6mLO89eir-Q4LJioPuq9yOrhvpw2d3Ms1u8NLlzsMQ&usqp=CAU" width=280>](https://matplotlib.org/stable/index.html) 
+ [<img target="_blank" src="https://icon2.cleanpng.com/20180829/okc/kisspng-flask-python-web-framework-representational-state-flask-stickker-1713946755581.webp" width=200>](https://flask.palletsprojects.com/en/stable/) 
+ [<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/512px-NumPy_logo_2020.svg.png" width=200>](https://aws.amazon.com/s3/) 
 
-<!-- ## Team
-[![Rohit Swami](https://avatars1.githubusercontent.com/u/16516296?v=3&s=144)](https://rohitswami.com/) |
--|
-[Rohit Swami](https://rohitswami.com/) |)
 
-## License
-[![Apache license](https://img.shields.io/badge/license-apache-blue?style=for-the-badge&logo=appveyor)](http://www.apache.org/licenses/LICENSE-2.0e)
 
-Copyright 2020 Rohit Swami
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+## Team
+This project was developed by:
 
-    http://www.apache.org/licenses/LICENSE-2.0
+Bablu kumar pandey
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+<!-- Collaborator Name -->
+
+
+
 
 ## Credits
-- [Google Images Download](https://github.com/hardikvasa/google-images-download) - This project wouldn't have been possible without this tool. It saved my enormous amount of time while collecting the data. A huge shout-out to its creator [Hardik Vasa](https://github.com/hardikvasa). -->
+
+Special thanks to the contributors of the scikit-learn library for their fantastic machine learning tools.
+
