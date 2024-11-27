@@ -100,14 +100,15 @@ To train the machine learning models:
 python app.py
 
 ```
-## Deployment on Render
-To deploy the Flask web app on Render:
+# Deployment on Render
 
-Push your code to GitHub.
-Go to Render and create a new web service.
-Connect your GitHub repository to Render.
-Set up the environment variables if required (e.g., API keys, database credentials).
+## To deploy the Flask web app on Render:
+Push your code to GitHub.<br>
+Go to Render and create a new web service.<br>
+Connect your GitHub repository to Render.<br>
+Set up the environment variables if required (e.g., API keys, database credentials).<br>
 Deploy and your app will be live!
+
 
 
 ## Directory Tree 
