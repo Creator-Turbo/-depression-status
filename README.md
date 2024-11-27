@@ -131,6 +131,7 @@ Deploy and your app will be live!
     ├── .gitignore                # Git ignore file
     ├── app.py                    # Main Flask application
     ├── best_model.pkl            # Trained machine learning model
+    ├── pic.jpg                   # Trained machine learning model
     ├── README.md                 # Project documentation
     ├── requirements.txt          # Dependencies for the project
     └── tempCodeRunnerFile.py     # Temporary code file (IDE generated)
