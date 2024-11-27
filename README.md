@@ -19,9 +19,11 @@
 
 
 <!-- ## Demo
-Link: [https://ipcc.rohitswami.com](https://ipcc.rohitswami.com) -->
+<!-- Link: [https://ipcc.rohitswami.com](https://ipcc.rohitswami.com) --> -->
 
-[![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com)
+![Depression](D:\Professional\sydney-sims-fZ2hMpHIrbI-unsplash.jpg)
+
+<!-- [![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com) -->
 
 ## Overview
 This repository contains code for training multiple machine learning classifiers on a given dataset to predict mental health outcomes based on demographic, lifestyle, and work-related factors. The models are implemented using the scikit-learn library and include a wide range of supervised learning algorithms suitable for classification tasks.
@@ -165,7 +167,7 @@ matplotlib (for visualizations)
   [<img target="_blank" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDzf1RMK1iHKjAswDiqbFB8f3by6mLO89eir-Q4LJioPuq9yOrhvpw2d3Ms1u8NLlzsMQ&usqp=CAU" width=280>](https://matplotlib.org/stable/index.html) 
  [<img target="_blank" src="https://icon2.cleanpng.com/20180829/okc/kisspng-flask-python-web-framework-representational-state-flask-stickker-1713946755581.webp" width=200>](https://flask.palletsprojects.com/en/stable/) 
  [<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/512px-NumPy_logo_2020.svg.png" width=200>](https://aws.amazon.com/s3/) 
- [<img target="_blank" src=https://cdn.worldvectorlogo.com/logos/seaborn-1.svg>](https://seaborn.pydata.org/) 
+ <!-- [<img target="_blank" src=https://cdn.worldvectorlogo.com/logos/seaborn-1.svg>](https://seaborn.pydata.org/)  -->
 
 
 
