@@ -28,21 +28,22 @@ This repository contains code for training multiple machine learning classifiers
 
 The following classifiers are applied to the dataset:
 
--Logistic Regression
--Random Forest Classifier
--Gradient Boosting Classifier
--AdaBoost Classifier
--HistGradient Boosting Classifier
--Support Vector Classifier (SVC)
--Linear Support Vector Classifier (LinearSVC)
--K-Nearest Neighbors Classifier (KNN)
--Gaussian Naive Bayes
--Multinomial Naive Bayes
--Bernoulli Naive Bayes
--Decision Tree Classifier
--Linear Discriminant Analysis (LDA)
--Quadratic Discriminant Analysis (QDA)
--We have trained all of these algorithms and evaluated their performance, -selecting the best-performing models based on classification accuracy.
+-Logistic Regression <br>
+-Random Forest Classifier<br>
+-Gradient Boosting Classifier<br>
+-AdaBoost Classifier<br>
+-HistGradient Boosting Classifier<br>
+-Support Vector Classifier (SVC)<br>
+-Linear Support Vector Classifier (LinearSVC)<br>
+-K-Nearest Neighbors Classifier (KNN)<br>
+-Gaussian Naive Bayes<br>
+-Multinomial Naive Bayes<br>
+-Bernoulli Naive Bayes<br>
+-Decision Tree Classifier<br>
+-Linear Discriminant Analysis (LDA)<br>
+-Quadratic Discriminant Analysis (QDA)<br>
+-We have trained all of these algorithms and evaluated their performance<br>
+-selecting the best-performing models based on classification accuracy.
 
 
 ## Motivation
