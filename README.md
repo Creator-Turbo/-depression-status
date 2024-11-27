@@ -18,8 +18,8 @@
   * [Credits](#credits)
 
 
-## Demo
-Link: [https://ipcc.rohitswami.com](https://ipcc.rohitswami.com)
+<!-- ## Demo
+Link: [https://ipcc.rohitswami.com](https://ipcc.rohitswami.com) -->
 
 [![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com)
 
