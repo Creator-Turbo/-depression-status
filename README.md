@@ -1,4 +1,3 @@
-## End to End ML Project
 # Depression Professional Classification : 
 
 ## Table of Content
@@ -181,15 +180,25 @@ matplotlib (for visualizations)
 
 ## Team
 This project was developed by:
+[![Bablu kumar pandey](https://github.com/Creator-Turbo/images-/blob/main/resized_image.png?raw=true)](ressume_link) |
+-|
 
-Bablu kumar pandey
 
-<!-- Collaborator Name -->
+**Bablu Kumar Pandey**
 
+
+- [GitHub](https://github.com/Creator-Turbo)  
+- [LinkedIn](https://www.linkedin.com/in/bablu-kumar-pandey-313764286/)
+* **Personal Website**: [My Portfolio](https://creator-turbo.github.io/Creator-Turbo-Portfolio-website/)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+You are free to use, modify, and distribute this software under the terms of the MIT License. For more details, see the [LICENSE](LICENSE) file included in this repository.
 
 
 
 ## Credits
 
 Special thanks to the contributors of the scikit-learn library for their fantastic machine learning tools.
-
