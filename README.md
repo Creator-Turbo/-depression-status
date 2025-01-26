@@ -1,7 +1,7 @@
 # Depression Professional Classification : 
 
 ## Table of Content
-  <!-- * [Demo](#demo) -->
+  * [Demo](#demo) 
   * [Overview](#overview)
   * [Motivation](#motivation)
   * [Technical Aspect](#technical-aspect)
@@ -26,7 +26,9 @@
 # "Depressed" or "Not Depressed"?
 ![Depression](pic.jpg)
 
-<!-- [![](https://imgur.com/s4FWb9b)](https://ipcc.rohitswami.com) -->
+## Demo
+This project analyzes Depression-Status to determine their "Depressed" or "Not Depressed"? .  
+**Link to Demo:** [Depression-Status](https://depression-status.onrender.com) 
 
 ## Overview
 This repository contains code for training multiple machine learning classifiers on a given dataset to predict mental health outcomes based on demographic, lifestyle, and work-related factors. The models are implemented using the scikit-learn library and include a wide range of supervised learning algorithms suitable for classification tasks.
